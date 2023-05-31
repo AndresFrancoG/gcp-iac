@@ -1,0 +1,12 @@
+gcp:
+  project_id: bigqueryspecies
+  bucket:
+    name: bigqueryspecies-container-bucket
+    location: southamerica-east1
+  vertex_ai:
+    job_name: kedro_container_run
+    region: southamerica-east1
+    docker_image_uri: docker.io/andresfrancog/species-observations:latest
+  kedro_job:
+    pipeline_name: species_observations
+    env_name: test_cloud
