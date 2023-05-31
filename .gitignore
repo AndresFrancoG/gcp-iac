@@ -12,10 +12,14 @@ conf/**/*credentials*
 # ignore everything in the following folders
 data/**
 logs/**
+ct_*.ipynb
 
 # except their sub-folders
 !data/**/
 !logs/**/
+
+# except sample data for unit testing
+!data/**/*_sample*.csv
 
 # also keep all .gitkeep files
 !.gitkeep
